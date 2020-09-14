@@ -1,0 +1,28 @@
+{% load static %}
+<!doctype html>
+<html lang="pt_br">
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+    
+    </head>
+<body>
+
+<div class="container">
+    <h1> Alterar </h1>
+
+<div class="bloco-alterar">
+    <form method="POST" action="/">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit" name="Alterar">
+
+    </form>
+</div>
+</div>
+</body>
+</html>

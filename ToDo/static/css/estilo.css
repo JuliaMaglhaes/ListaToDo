@@ -1,0 +1,91 @@
+:root {
+    --background-site-bordas: #D9D2D7;
+    --block-color: #B08564;
+    --font-alternative: #EEEDEE;
+    --details-color-sombra: #574334;
+    --font-color-code: #1c2729;
+    --font-color-code-details: #0e1314;
+    --background-input: #fff;
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var( --font-color-code);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--font-alternative);
+    font-family: Archivo;
+}
+
+.container {
+    width: 90vw;
+    max-width: 700px;
+}
+
+input {
+    width: auto;
+    height: 2.2rem;
+    margin-top: 0.8rem;
+    border-radius: 0.3rem;
+    background: var(--background-input);
+    border: 1px solid var(--background-site-bordas);
+    outline: 0;
+    padding: 0 1.6rem;
+    font: 1.6 Archivo;
+    margin-bottom: 15px;
+}
+
+li {
+    width: auto;
+    height: 3rem;
+    background-color: var(--block-color);
+    border: 1px solid var(--details-color-sombra);
+    outline: 0;
+    padding: 0 1.6rem;
+    margin-bottom: 10px;
+}
+
+li a {
+    font-family: Archivo;
+    color: #fff;
+}
+
+li a:hover {
+    color: var(--font-color-code-details);
+    text-decoration: underline;
+}
+
+strike {
+    text-decoration: line-through;
+}
+
+.bloco-alterar {
+    width: auto;
+    height: 5rem;
+    background-color: var(--block-color);
+    border: 1px solid var(--details-color-sombra);
+    font-family: Archivo;
+    color: #fff;
+}
+
+@media(min-width:700px) {
+     :root {
+        font-size: 100%;
+    }
+    input {
+        width: auto;
+    }
+}
